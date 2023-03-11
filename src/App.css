@@ -16,6 +16,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  font-weight: 700;
+  font-size: 5vw;
+  background: linear-gradient(140deg, #1c749c, rgb(128, 128, 128));
+  background-clip: text;
+  color: transparent;
 }
 .img_box img {
   width: 100%;
@@ -31,3 +36,14 @@
   font-weight: 700;
   font-size: 5vw;
 }
+.color {
+  color: black;
+}
+/* react hooks css**/
+.ul_list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* react hooks css end **/

@@ -20,9 +20,9 @@
 .logo {
   font-size: 3vw;
   font-weight: 700;
-  background: -webkit-linear-gradient(75deg, #dd2323, #380fec);
+  background: linear-gradient(75deg, #dd2323, #380fec);
   background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 .nav_list ul li {
   float: left;
@@ -34,10 +34,79 @@ ul {
 }
 a {
   text-decoration: none;
-  color: white;
+  color: rgb(161, 30, 201);
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 .topic_list {
-  font-size: 18px;
-  font-weight: 700;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.btn {
+  background-color: yellowgreen;
+  border: none;
+  padding: 5px 20px;
+  border-radius: 15px;
+}
+.btn:hover {
+  box-shadow: rgb(161, 160, 160) 0px 0px 1px 3px;
+}
+.btn:active {
+  background-color: #e78585;
+}
+.bfr_login {
+  font-size: 20px;
+  color: white;
+  font-weight: 500;
+}
+.dropdown {
+  width: 150px;
+  margin: 0 auto;
+  user-select: none;
+}
+.dropdown .dropdown-btn {
+  padding: 10px;
+  background: rgb(247, 242, 242);
+  box-shadow: 3px 3px 3px 6px rgba(0, 0, 0, 0.06);
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.dropdown .dropdown-contain {
+  position: absolute;
+  top: 100px;
+  padding: 15px;
+  background: #fff;
+  box-shadow: 3px 3px 3px 6px rgba(0, 0, 0, 0.06);
+  color: #333;
+}
+.dropdown .dropdown-contain .dropdown-items {
+  padding: 10px;
+  cursor: pointer;
+}
+.dropdown .dropdown-contain .dropdown-items:hover {
+  background: #f4f4f4;
+}
+.nav-items {
+  display: flex;
+  align-items: center;
+}
+.drawer-container {
+  width: 100%;
+  position: absolute;
+  top: 70px;
+  height: 100vh;
+  transition: ease-in-out;
+
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.drawer-body {
+  width: 300px;
+  background-color: #fff;
+  height: 100vh;
+  transition: 5s;
 }
