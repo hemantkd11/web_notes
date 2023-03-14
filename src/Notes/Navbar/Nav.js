@@ -21,19 +21,19 @@ const Navbar = () => {
             <div className="nav-items">
               <div className="list-item">
                 <ul>
-                  <li>
+                  <li className="tap-1">
                     <Link to="/">Home</Link>
                   </li>
-                  <li>
+                  <li className="tap-2">
                     <Link to="/web_notes/html">HTML</Link>
                   </li>
-                  <li>
+                  <li className="tap-3">
                     <Link to="/web_notes/python">Python</Link>
                   </li>
-                  <li>
+                  <li className="tap-4">
                     <Link to="/web_notes/react">REACT</Link>
                   </li>
-                  <li>
+                  <li className="tap-5">
                     <Link to="/web_notes/js">JAVASCRIPT</Link>
                   </li>
                 </ul>

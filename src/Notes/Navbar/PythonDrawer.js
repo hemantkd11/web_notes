@@ -6,7 +6,9 @@ const PythonDrawer = ({ onClick, to, topic }) => {
   return (
     <div className="drawer-container" onClick={onClick}>
       <div className="drawer-body" onClick={(e) => e.stopPropagation()}>
-        <Link to={to}>{topic}</Link>
+        <Link to="/react" state={{ from: "ReactHooks" }}>
+          {topic}
+        </Link>
       </div>
     </div>
   );

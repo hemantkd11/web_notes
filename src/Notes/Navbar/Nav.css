@@ -76,8 +76,9 @@ a {
   cursor: pointer;
 }
 .dropdown .dropdown-contain {
+  width: 150px;
   position: absolute;
-  top: 100px;
+  top: 60px;
   padding: 15px;
   background: #fff;
   box-shadow: 3px 3px 3px 6px rgba(0, 0, 0, 0.06);
@@ -93,6 +94,18 @@ a {
 .nav-items {
   display: flex;
   align-items: center;
+}
+@media only screen and (max-width: 1000px) {
+  .nav_list ul li {
+    float: left;
+    list-style: none;
+    padding: 0px 1vw;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .list-item {
+    display: none;
+  }
 }
 .drawer-container {
   width: 100%;

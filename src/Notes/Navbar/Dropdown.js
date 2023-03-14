@@ -8,8 +8,8 @@ const Dropdown = ({ selected, setSelected }) => {
     <Link to="/web_notes/react">REACT</Link>,
     <Link to="/web_notes/python">Python</Link>,
     <Link to="/web_notes/python">HTML</Link>,
-    <Link to="/web_notes/python">JAVASCRIPT</Link>,
-    <Link to="/web_notes/python">CSS</Link>,
+    <Link to="/web_notes/javascript">JAVASCRIPT</Link>,
+    <Link to="/web_notes/css">CSS</Link>,
   ];
   return (
     <div className="dropdown">

@@ -26,7 +26,6 @@ const PythonNotes = () => {
         {drawer && (
           <PythonDrawer
             onClick={() => setDrawer(false)}
-            to={"/web_notes/react"}
             topic={list.map((li) => (
               <div>{li}</div>
             ))}
@@ -85,7 +84,51 @@ const PythonNotes = () => {
       <div>
         <PythonSetUp />
       </div>
+      <div>
+        <PythonDataType />
+      </div>
+      <div>
+        <HtmlCompiler />
+      </div>
     </div>
   );
 };
 export default PythonNotes;
+
+const PythonDataType = () => {
+  return (
+    <div>
+      <h1>List in Python</h1>
+      <ul className="ul_list">
+        <li>
+          lists are ordered sequences that cam hold a varietyu of object types.
+        </li>
+        <li>
+          They use [] brackets and commas to seperate objects in the list.
+        </li>
+        <li>
+          <mark>To slice list Index</mark> : - use variable name. <br />
+          <mark>Example :- </mark> myList = ["hii","hello","bye"]
+          print(myList[1:]) in this the first index si deleted and other will
+          orint as an output
+        </li>
+      </ul>
+    </div>
+  );
+};
+
+const HtmlCompiler = () => {
+  const [text, setText] = useState();
+
+  return (
+    <>
+      <textarea
+        placeholder="Html goes here"
+        onChange={(e) => setText(e.target.value)}
+      ></textarea>
+      <div value={text} id="text">
+        {text}
+      </div>
+    </>
+  );
+};
