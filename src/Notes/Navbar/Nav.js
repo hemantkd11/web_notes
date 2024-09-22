@@ -17,37 +17,37 @@ const Navbar = () => {
           <div className="logo">Cs_Coding</div>
         </div>
         <div className="nav_list">
-          {isAuthenticated ? (
-            <div className="nav-items">
-              <div className="list-item">
-                <ul>
-                  <li className="tap-1">
-                    <Link to="/">Home</Link>
-                  </li>
-                  <li className="tap-2">
-                    <Link to="/web_notes/html">HTML</Link>
-                  </li>
-                  <li className="tap-3">
-                    <Link to="/web_notes/python">Python</Link>
-                  </li>
-                  <li className="tap-4">
-                    <Link to="/web_notes/react">REACT</Link>
-                  </li>
-                  <li className="tap-5">
-                    <Link to="/web_notes/js">JAVASCRIPT</Link>
-                  </li>
-                </ul>
-              </div>
-              <div className="list-dropdown">
-                <Dropdown selected={selected} setSelected={setSelected} />
-              </div>
+          {/* {isAuthenticated ? ( */}
+          <div className="nav-items">
+            <div className="list-item">
+              <ul>
+                <li className="tap-1">
+                  <Link to="/">Home</Link>
+                </li>
+                <li className="tap-2">
+                  <Link to="/web_notes/html">HTML</Link>
+                </li>
+                <li className="tap-3">
+                  <Link to="/web_notes/python">Python</Link>
+                </li>
+                <li className="tap-4">
+                  <Link to="/web_notes/react">REACT</Link>
+                </li>
+                <li className="tap-5">
+                  <Link to="/web_notes/js">JAVASCRIPT</Link>
+                </li>
+              </ul>
             </div>
-          ) : (
+            <div className="list-dropdown">
+              <Dropdown selected={selected} setSelected={setSelected} />
+            </div>
+          </div>
+          {/* ) : (
             <div className="bfr_login">Welcome to Web_notes </div>
-          )}
+          )} */}
         </div>
         <div className="topic_list">
-          <div>{isAuthenticated && <i>{user.name}</i>}</div>
+          {/* <div>{isAuthenticated && <i>{user.name}</i>}</div>
           <div>
             {isAuthenticated ? (
               <button
@@ -63,7 +63,7 @@ const Navbar = () => {
                 Log In
               </button>
             )}
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
