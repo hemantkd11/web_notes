@@ -3,9 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { BrowserRouter as Router, Link } from "react-router-dom";
 const ReactPure_comp = () => {
   const [age, setAge] = useState(0);
-  setTimeout(() => {
-    setAge((age) => age + 1);
-  }, 1000);
+
   return (
     <div>
       <Link className="color" to="/web_notes/react/reacthooks">
