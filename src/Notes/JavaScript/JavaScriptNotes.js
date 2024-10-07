@@ -263,7 +263,12 @@ const WhatIsJavaScript = () => {
         <p className="ans">
           Funtion are the building block of code that allow you to encapsulate
           logics, reuse code, and implement complex behavior. There are several
-          way to define a function in javascript : -
+          way to define a function in javascript : - Types of Functions in
+          JavaScript <br /> Function Declaration <br /> Function Expression{" "}
+          <br />
+          Arrow Functions (ES6) <br /> Anonymous Functions IIFE <br />{" "}
+          (Immediately Invoked Function Expression) <br /> Higher-Order
+          Functions
           <h4>1. Function Declaration</h4>
           <p>
             Answer -- A function declaration is the most basic way to define a
@@ -389,6 +394,14 @@ const WhatIsJavaScript = () => {
           based on different conditions,It is a control flow statement That
           allow a variable to be tested for equality against the list of value
         </p>
+      </div>
+      <div>
+        MVP : - <b>Primitive types</b> (like string, number, boolean) are stored
+        in stack memory. When you assign a primitive value to another variable,
+        it creates a copy of the original value. <b>Reference types</b> (like
+        object, array, function) are stored in heap memory. When you assign a
+        reference type to another variable, it creates a reference (or pointer)
+        to the same object in memory.
       </div>
     </div>
   );

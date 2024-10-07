@@ -50,3 +50,17 @@
 pre {
   font-size: 20px;
 }
+.App-page {
+  width: 100%;
+  padding: 10px 20px;
+}
+.active {
+  color: red;
+}
+tr {
+  border: 1px solid red;
+}
+td {
+  border: 1px solid blue;
+  text-align: center;
+}

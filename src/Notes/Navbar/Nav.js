@@ -3,9 +3,10 @@ import { BrowserRouter as Router, Link } from "react-router-dom";
 import { useAuth0 } from "@auth0/auth0-react";
 import "./Nav.css";
 import Dropdown from "./Dropdown";
+import { useStateValue } from "../../Auth/authantication";
 const Navbar = () => {
-  const { loginWithRedirect, logout, user, isAuthenticated, isLoading } =
-    useAuth0();
+  const { user } = useStateValue();
+  const { loginWithRedirect, logout, isAuthenticated, isLoading } = useAuth0();
   const [selected, setSelected] = useState("ChoseOne");
   if (isLoading) {
     return <div>Loading ...</div>;
@@ -22,10 +23,16 @@ const Navbar = () => {
             <div className="list-item">
               <ul>
                 <li className="tap-1">
+                  <Link to="/">{user}</Link>
+                </li>
+                <li className="tap-1">
                   <Link to="/">Home</Link>
                 </li>
+                <li className="tap-6">
+                  <Link to="/web_notes/login">Login</Link>
+                </li>
                 <li className="tap-2">
-                  <Link to="/web_notes/html">HTML</Link>
+                  <Link to="/web_notes/Nextjs">NextJs</Link>
                 </li>
                 <li className="tap-3">
                   <Link to="/web_notes/python">Python</Link>
@@ -34,7 +41,7 @@ const Navbar = () => {
                   <Link to="/web_notes/react">REACT</Link>
                 </li>
                 <li className="tap-5">
-                  <Link to="/web_notes/js">JAVASCRIPT</Link>
+                  <Link to="/web_notes/javascript">JAVASCRIPT</Link>
                 </li>
               </ul>
             </div>

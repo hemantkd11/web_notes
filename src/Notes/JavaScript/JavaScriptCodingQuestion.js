@@ -33,7 +33,7 @@ const CodingQuestion = () => {
                     `}
                 </pre>
                 <p>
-                  <b>Explanation --></b>
+                  <b>Explanation --</b>
                   step 1. In this first we have check if the coming number is
                   lessThen or = to 1 and
                 </p>

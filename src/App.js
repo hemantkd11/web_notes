@@ -11,26 +11,60 @@ import Css from "./Notes/Css/Css";
 // import Javascript from "./Notes/JavaScript/javanotes";
 import JavascriptNotes from "./Notes/JavaScript/JavaScriptNotes";
 import CodingQuestion from "./Notes/JavaScript/JavaScriptCodingQuestion";
+import NextJs from "./Notes/Html/NextjsNotes";
+import ProtectedRoute from "./Auth/ProtectedRoute";
+import Login from "./Form/login";
+import { AuthProvider, useStateValue } from "./Auth/authantication";
+import { useState } from "react";
 function App() {
+  const user = useStateValue();
+
   return (
-    <div className="App">
+    <AuthProvider>
       <Router>
         <Navbar />
+        <div>{user}</div>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/web_notes/react" element={<ReactPure_comp />} />
+          <Route path="/web_notes/login" element={<Login />} />
+          <Route path="/web_notes/Nextjs" element={<NextJs />} />
           <Route path="/web_notes/react/reacthooks" element={<ReactHooks />} />
           <Route path="/web_notes/python" element={<PythonNotes />} />
           <Route path="/web_notes/css" element={<Css />} />
-          <Route path="/web_notes/javascript" element={<JavascriptNotes />} />
+          <Route
+            path="/web_notes/javascript"
+            element={<ProtectedRoute element={JavascriptNotes} />}
+          />
           <Route
             path="/web_notes/javascript/codingQuestion"
             element={<CodingQuestion />}
           />
         </Routes>
       </Router>
-    </div>
+    </AuthProvider>
   );
 }
 
 export default App;
+
+// import React from "react";
+// import "./App.css";
+// import ReactTab from "./NewFileForpractice/ReactTab";
+// import Count from "./NewFileForpractice/count";
+
+// const App = () => {
+//   return (
+//     <div>
+//       <div>
+//         <div>hello</div>
+
+//         <Count />
+//         <Apitest />
+
+//         <ReactTab />
+//       </div>
+//     </div>
+//   );
+// };
+// export default App;
